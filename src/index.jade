@@ -1,0 +1,218 @@
+mixin slide(classNames)
+  if classNames
+    section(class=classNames, data-bespoke-backdrop='backdrop ' + classNames.split(' ').map(function(className) { return 'backdrop--' + className; }).join(' '))
+      block
+  else
+    section
+      block
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Curso Prospectiva y Vigiliancia Tecnológica - Presentación y Programa
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      +slide('purple')
+        h1
+          | Curso Prospectiva y Vigiliancia Tecnológica
+          br
+          span.subtitle Presentación y Programa
+        h3
+          | Jaime Andrés García
+          br
+          | Instituto Tecnológico Metropolitano
+          br
+          | Medellín, 2018
+
+      +slide('purple cascade')
+        h1 Objetivos (1/3)
+          p
+            | Como resultado del curso, el o la estudiante estará en capacidad de:
+          p
+            | 1. Realizar análisis del contexto general social, político y económico asociado a una investigación de vigilancia tecnológica
+          p
+            | 2. Desarrollar análisis de investigación a partir de la construcción de
+            br
+            | ecuaciones de búsqueda y el análisis de minería de texto
+      +slide('purple cascade')
+        h1 Objetivos (2/3)
+        p
+          | 3. Desarrollar análisis de patentes a partir de la revisión sistemática
+          br
+          | y el uso de técnicas de análisis y visualización de datos
+        p
+          | 4. Realizar estudios de prospectiva tecnológica aplicando herramientas
+          br
+          | de matriz de influencias y análisis morfológico
+        p
+          | 5. Presentar informes de estudios de prospectiva y vigilancia
+          br
+          | tecnológica fáciles de consumir a partir de visualizaciones
+          br
+          | de datos e infográficos
+      +slide('purple cascade')
+        h1 Objetivos (3/3)
+        p
+          | 6. Formular proyectos para el desarrollo de estudios de prospectiva
+          br
+          | y vigilancia tecnológica
+        p
+          | 7. Examinar y evaluar estudios de prospectiva y vigilancia tecnológica
+          br
+          | por consultores, empresas, gobiernos, etc.
+      +slide('blue cascade')
+        h1 Contenido del Curso
+        p
+          | 1. Vigilancia Tecnológica - Análisis de Entorno y Contexto General
+        p
+          | 2. Vigilancia Tecnológica - Análisis de Investigaciones
+        p
+          | 3. Vigilancia Tecnológica - Análisis de Patentes
+        p
+          | 4. Prospectiva Tecnológica
+      +slide('blue cascade')
+        h1 Programación del Curso (1/2)
+        p
+          strong Clase 1
+          |  Presentación del Curso - Análisis de Entorno
+        p
+          strong Clase 2
+          |  Análisis de Entorno - Entrega 1
+          br
+          | Workshop Roadmap Class
+        p
+          strong Clases 3 - 4
+          |  Análisis de Investigaciones
+        p
+          strong Clase 5
+          |  Análisis de Investigaciones - Entrega 2
+      +slide('blue cascade')
+        h1 Programación del Curso (2/2)
+        p
+          strong Clases 6 - 7
+          |  Análisis de Patentes
+        p
+          strong Clase 8
+          |  Análisis de Patentes - Entrega 3
+        p
+          strong Clases 9 - 11
+          |  Prospectiva Tecnológica
+        p
+          strong Clase 12
+          |  Prospectiva Tecnológica - Entrega 4 - Exposición
+      +slide('green cascade')
+        h1 Evaluación del Curso
+        p
+          | Análisis del Entorno y Contexto General
+          strong  (20 %)
+        p
+          | Análisis de Investigaciones
+          strong  (25 %)
+        p
+          | Análisis de Patentes
+          strong  (25 %)
+        p
+          | Prospectiva Tecnológica - Exposición
+          strong  (30 %)
+      +slide('blue cascade')
+        h1 Introdución a la Prospectiva y Vigilancia - Descripción de Trabajo
+        h2 Technology Foresight is systematically attempting
+        h2 to look in long-term future science, technology,
+        h2 economy, society to identify strategic areas
+        h2 and emerging technologies
+        h6 (Martin, 1995)
+      +slide('cascade')
+        h2 Infográficos - Resultados Vigilancia y Prospectiva - Entrega 4
+        img(src="images/mckinsey-global-institute-12-disruptive-technologies_5277d72d35513_w1500.png",width="66%")
+        h6 (Tay, 2013)
+      +slide('cascade')
+        h2 Infográficos - Resultados Vigilancia y Prospectiva - Entrega 4
+        img(src="images/autonomous-cars.jpg",width="50%")
+        h6 (KMPG, 2015)
+      +slide('black cascade')
+        h3 Infográficos - Resultados Vigilancia y Prospectiva - Entrega 4
+        img(src="images/health-technology-evolution.png",width="50%")
+        h6 (EnvionsingTech, 2012)
+      +slide('black cascade')
+        h3 Infográficos - Resultados Vigilancia y Prospectiva - Entrega 4
+        img(src="images/fourth-revolution.png",width="66%")
+        h6 (EnvionsingTech, 2012)
+      +slide('blue cascade')
+        h1 Infográficos - Requisitos y Recomendaciones
+        h2 Inspiración: http://www.myforesight.my/
+        h2 1 página - Diseño Libre
+        h2 Herramientas: PiktoChart, Infogram, Canva
+      +slide('cascade')
+        h2 Escenarios (Al menos 4)
+        img(src="images/escenarios.png",width="60%")
+        h6 (Gausemeier, 1998)
+      +slide('cascade')
+        h2 Análisis Morfológico
+        img(src="images/morfologico-1.png",width="50%")
+        h6 (Gausemeier, 1998)
+      +slide('cascade')
+        h2 Construcción de Escenarios
+        img(src="images/construccion-escenarios.png",width="40%")
+        h6 (Godet, 2018)
+      +slide('cascade')
+        h2 Radar de Variables
+        img(src="images/radar.png",width="70%")
+        h6 (Godet, 2018)
+      +slide('cascade')
+        h2 Matriz de Influencia
+        img(src="images/micmac.png",width="50%")
+        h6 (Godet, 2007)
+      +slide('cascade')
+        h2 Lista de Variables (Mínimo 30)
+        img(src="images/lista-variables.png",width="70%")
+        h6 (Godet, 2007)
+      +slide('cascade')
+        img(src="images/metodologia-prospectiva.png",width="38%")
+        h6 (Godet - Metodología Prospectiva, 2007)
+      +slide('blue cascade')
+        h1 Vigilancia Tecnológica
+        h2 Technology Watch consists in systematically capturing, analysing, disseminating
+        h2 and exploiting useful technical information
+        h2 for the watch and growth of a company
+        h6 (Escorsa, 2001)
+      +slide('cascade')
+        h1 Análisis de Patentes
+        h2 Technology Watch consists in systematically capturing, analysing, disseminating
+      +slide('cascade')
+        h1 Enviromental Scanning
+        img(src="images/technology-management.png",width="66%")
+        h6 (Martin, 1995)
+      +slide('red cascade')
+        h1 Pautas de Evaluación
+        a(href='pdf/Evaluacion-Roadmap-Maestria.pdf', target='_blank') Pautas Evaluación Entregas
+        br
+        a(href='pdf/Evaluacion-Roadmap-Maestria.pdf', target='_blank') Pautas Peer Reviews
+        br
+        a(href='pdf/Evaluacion-Roadmap-Integrado.pdf', target='_blank') Pautas Exposición
+      +slide('white cascade references')
+        h1 Bibliografía
+        p Coates, V., Farooque, M., Klavans, R., Lapid, K., Linstone, H. A., Pistorius, C., & Porter, A. L. (2001). On the Future of Technological Forecasting. Technological Forecasting and Social Change, 67(1), 1–17. doi:10.1016/S0040-1625(00)00122-0
+        p Kostoff, R. N., & Schaller, R. R. (2001). Science and technology roadmaps. Engineering Management, IEEE Transactions on, 48(2), 132–143.
+        p Lucheng, H., Xin, L., & Wenguang, L. (2010). Research on emerging technology selection and assessment by technology foresight and fuzzy consistent matrix. foresight, 12(2), 77–89. doi:10.1108/14636681011035762
+        p Martin, B. R. (1995). Foresight in science and technology. Technology Analysis & Strategic Management, 7(2), 139–168.
+      +slide('white cascade references')
+        h1 Bibliografía
+        p The Washington Post. (2009, January 4). The Next Next Things. Retrieved mayo 2, 2012, from http://www.washingtonpost.com/wp-srv/opinions/outlook/nextthings/
+        p Martino, J. P. (2003). A review of selected recent advances in technological forecasting. Technological Forecasting and Social Change, 70(8), 719–733.
+        p Porter, A. L., Cunningham, S. W., Roper, A. T., Banks, J., Mason, T. W., & Rossini, F. A. (2011). Forecasting and Management of Technology. John Wiley & Sons.
+        p Kostoff, R. N., & Schaller, R. R. (2001). Science and technology roadmaps. Engineering Management, IEEE Transactions on, 48(2), 132–143.
+      +slide('white cascade references')
+        h1 Bibliografía
+        p Gausemeier, J., Fink, A., & Schlake, O. (1998). Scenario Management: An Approach to Develop Future Potentials. Technological Forecasting and Social Change, 59(2), 111–130. doi:10.1016/S0040-1625(97)00166-2
+        p Islam, T., & Meade, N. (1997). The diffusion of successive generations of a technology: A more general model. Technological Forecasting and Social Change, 56(1), 49–60. doi:10.1016/S0040-1625(97)00030-9
+        p Phaal, R., Farrukh, C. J. P., & Probert, D. R. (2004). Technology roadmapping—A planning framework for evolution and revolution. Technological Forecasting and Social Change, 71(1–2), 5–26. doi:10.1016/S0040-1625(03)00072-6
+        p Ryu, J., & Byeon, S. C. (2011). Technology level evaluation methodology based on the technology growth curve. Technological Forecasting and Social Change, 78(6), 1049–1059. doi:10.1016/j.techfore.2011.01.003
+        p Shin, T. (1998). Using Delphi for a Long-Range Technology Forecasting, and Assessing Directions of Future R&D Activities The Korean Exercise. Technological Forecasting and Social Change, 58(1–2), 125–154. doi:10.1016/S0040-1625(97)00053-X
+    script(src='build/build.js')
